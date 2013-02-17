@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Dont delete the below taglib details, ELSE you'll have manually type in every time you create TLD -->
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd" version="2.0">
+
+	<tlib-version>1.2</tlib-version>
+	<uri>DiceFunction</uri>
+	<function>
+		<name>rollIt</name>
+		<function-class>chap8.tld.Function</function-class>
+		<function-signature>
+			int rollDice()
+		</function-signature>
+	</function>
+	
+</taglib>
+

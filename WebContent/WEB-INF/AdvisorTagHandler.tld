@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Dont delete the below taglib details, ELSE you'll have manually type in every time you create TLD -->
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd" version="2.0">
+
+<!-- this tag library is used for advising provided by AdvisorTagHandler -->
+
+	<tlib-version>1.2</tlib-version>
+	<short-name>ToolVendors</short-name>
+	
+	<uri>advise</uri>
+	
+	<tag>
+		<description>This tag will be used for advising</description>
+		<name>randomAdvise</name>
+		<!-- when the above tagName is invoked in jsp, the below class's, doTag() will be called -->
+		<tag-class>chap9.CustTag.AdvisorTagHandler</tag-class>
+		<body-content>empty</body-content>
+		
+		<attribute>
+			<name>user</name>
+			<!-- <type></type>  optional -->
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>
